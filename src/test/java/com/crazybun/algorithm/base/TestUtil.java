@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
+ * 测试工具，生成随机测试数据用于测试
+ *
  * @version 2018/12/12.
  * @auther CrazyBunQnQ
  */
