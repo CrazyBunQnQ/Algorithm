@@ -3,8 +3,8 @@ package com.crazybun.algorithm.base;
 import org.junit.Test;
 
 /**
- * @version 2018/12/12.
- * @auther CrazyBunQnQ
+ * @author CrazyBunQnQ
+ * @date 2018/12/12.
  */
 public class BaseAlgorithmTest {
     @Test

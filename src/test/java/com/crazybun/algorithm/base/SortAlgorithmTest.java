@@ -7,8 +7,8 @@ import java.util.Arrays;
 /**
  * 排序算法测试
  *
- * @version 2018/12/12.
- * @auther CrazyBunQnQ
+ * @author CrazyBunQnQ
+ * @date 2018/12/12.
  */
 public class SortAlgorithmTest {
     /**
@@ -21,16 +21,24 @@ public class SortAlgorithmTest {
         // 随机生成测试数组
         Integer[] arr = TestUtil.generateRandomArray(n, rangeL, rangeR);
         System.out.println("生成随机数组：" + Arrays.toString(arr));
+
         Integer[] arr1 = arr.clone();
         start = System.currentTimeMillis();
         Sort.selectionSort(arr1, n);
         timeCost = System.currentTimeMillis() - start;
         System.out.println("选择排序用时 " + timeCost + " 毫秒：");
+
         Integer[] arr2 = arr.clone();
         start = System.currentTimeMillis();
         Sort.bubbleSort(arr2, n);
         timeCost = System.currentTimeMillis() - start;
         System.out.println("冒泡排序用时 " + timeCost + " 毫秒：");
+
+        Integer[] arr3 = arr.clone();
+        start = System.currentTimeMillis();
+        Sort.insertSort(arr3, n);
+        timeCost = System.currentTimeMillis() - start;
+        System.out.println("插入排序用时 " + timeCost + " 毫秒：");
 
         if (Arrays.equals(arr1, arr2)) {
             System.out.println(Arrays.toString(arr1));

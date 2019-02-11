@@ -3,8 +3,8 @@ package com.crazybun.algorithm.base;
 /**
  * 常用搜索、查找算法
  *
- * @version 2018/12/12.
- * @auther CrazyBunQnQ
+ * @author CrazyBunQnQ
+ * @date 2018/12/12.
  */
 public class Search {
     private Search() {}
@@ -26,9 +26,14 @@ public class Search {
         int l = 0, r = n - 1;
         while (l <= r) {
             int mid = l + (r - l) / 2;
-            if (arr[mid].compareTo(target) == 0) return mid;
-            if (arr[mid].compareTo(target) > 0) r = mid - 1;
-            else l = mid + 1;
+            if (arr[mid].compareTo(target) == 0) {
+                return mid;
+            }
+            if (arr[mid].compareTo(target) > 0) {
+                r = mid - 1;
+            } else {
+                l = mid + 1;
+            }
         }
         return -1;
     }

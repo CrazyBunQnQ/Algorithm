@@ -7,8 +7,8 @@ import java.util.Arrays;
 /**
  * 搜索查找算法测试
  *
- * @version 2018/12/12.
- * @auther CrazyBunQnQ
+ * @author CrazyBunQnQ
+ * @date 2018/12/12.
  */
 public class SearchAlgorithmTest {
     /**
